@@ -68,7 +68,7 @@ python tools/test.py data=imagenet hydra.run.dir=your/weight/directory test.chec
 <details><summary>Tiny-ImageNet</summary>
   
 
-* [ResNet50]()
+* [ResNet50](https://drive.google.com/file/d/1IabIHSEYtErC02wJ6ScfeKhfbotsi-_q/view?usp=sharing)
 ```bash
 [2023-02-07 18:31:53,040 INFO][tester.py:124 - log_eval_epoch_info] - 
 +---------+---------+---------+---------+
@@ -84,7 +84,7 @@ python tools/test.py data=imagenet hydra.run.dir=your/weight/directory test.chec
 +---------+---------+---------+---------+---------+
 ```
 
-* [ResNet101]()
+* [ResNet101](https://drive.google.com/file/d/1sxX4GuTSkdzpTeU76Y7pnAOLsnp6_1Fj/view?usp=sharing)
 
 ```bash
 [2023-01-21 05:55:53,096 INFO][trainer.py:214 - log_eval_epoch_info] - 
@@ -107,7 +107,7 @@ python tools/test.py data=imagenet hydra.run.dir=your/weight/directory test.chec
 
 <details><summary>ImageNet</summary>
 
-* [ResNet50]()
+* [ResNet50](https://drive.google.com/file/d/1fXIo2GU-npLgkFRkvTxnECE9_kqiAGCr/view?usp=sharing)
 ```bash
 [2023-02-10 14:01:17,389 INFO][tester.py:149 - log_eval_epoch_info] -
 +---------+---------+---------+---------+
