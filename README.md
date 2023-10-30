@@ -61,7 +61,7 @@ python tools/test.py data=tiny_imagenet hydra.run.dir=your/weight/directory test
 python tools/test.py data=imagenet hydra.run.dir=your/weight/directory test.checkpoint=your_weight.pth
 ```
 
-### Pretrained models
+## Pretrained models
 **NOTE**: we train networks with one and four A5000 GPU for Tiny-ImageNet and ImageNet, respectively.
 
 
