@@ -1,0 +1,17 @@
+name: mbls
+margin: 10
+alpha: 0.1
+schedule: ""
+mu: 0
+max_alpha: 100.0
+step_size: 100
+
+object:
+  _target_: calibrate.losses.MbLS
+  margin: ${loss.margin}
+  alpha: ${loss.alpha}
+  ignore_index: ${loss.ignore_index}
+  mu: ${loss.mu}
+  schedule: ${loss.schedule}
+  max_alpha: ${loss.max_alpha}
+  step_size: ${loss.step_size}

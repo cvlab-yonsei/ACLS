@@ -1,0 +1,14 @@
+name: acls
+pos_lambda: 1.0
+neg_lambda: 0.1
+alpha: 0.1
+margin: 10.0
+num_classes: 200
+
+object:
+  _target_: calibrate.losses.ACLS
+  pos_lambda: ${loss.pos_lambda}
+  neg_lambda: ${loss.neg_lambda}
+  alpha: ${loss.alpha}
+  margin: ${loss.margin}
+  num_classes: ${loss.num_classes}

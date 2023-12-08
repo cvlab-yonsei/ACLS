@@ -1,0 +1,8 @@
+name: ls
+alpha: 0.05
+
+object:
+  _target_: calibrate.losses.LabelSmoothingCrossEntropy
+  alpha: ${loss.alpha}
+  ignore_index: ${loss.ignore_index}
+  reduction: mean

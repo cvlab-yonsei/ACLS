@@ -1,0 +1,6 @@
+name: ce
+
+object:
+  _target_: torch.nn.CrossEntropyLoss
+  ignore_index: ${loss.ignore_index}
+  reduction: mean
