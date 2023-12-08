@@ -15,7 +15,6 @@ setup(
         "flake8==4.0.1",
         "terminaltables==3.1.10",
         "matplotlib==3.5.1",
-        "plotly==5.7.0",
         "pandas==1.4.2"
     ],
 )

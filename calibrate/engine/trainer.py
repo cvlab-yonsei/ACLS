@@ -10,10 +10,9 @@ from hydra.utils import instantiate
 from terminaltables.ascii_table import AsciiTable
 
 from calibrate.net import ModelWithTemperature
-from calibrate.losses import LogitMarginL1
 from calibrate.evaluation import (
     AverageMeter, LossMeter, ClassificationEvaluator,
-    CalibrateEvaluator, LogitsEvaluator, ProbsEvaluator
+    CalibrateEvaluator, LogitsEvaluator
 )
 from calibrate.utils import (
     load_train_checkpoint, load_checkpoint, save_checkpoint, round_dict
@@ -116,8 +115,6 @@ class Trainer:
         log_dict["samples"] = self.evaluator.num_samples()
         log_dict["lr"] = get_lr(self.optimizer)
         log_dict.update(self.loss_meter.get_avgs())
-        if isinstance(self.loss_func, LogitMarginL1):
-            log_dict["alpha"] = self.loss_func.alpha
         metric, table_data = self.evaluator.mean_score(print=False)
         log_dict.update(metric)
         log_dict.update(self.logits_evaluator.mean_score())
@@ -233,8 +230,6 @@ class Trainer:
             val_loss, val_score = self.eval_epoch(self.val_loader, epoch, phase="Val")
             # run lr scheduler
             self.scheduler.step()
-            if isinstance(self.loss_func, LogitMarginL1):
-                self.loss_func.schedule_alpha(epoch)
             if self.best_score is None or val_score > self.best_score:
                 self.best_score, self.best_epoch = val_score, epoch
                 best_checkpoint = True

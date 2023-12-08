@@ -3,7 +3,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 
-class AdaptiveRegCondition(nn.Module):
+class ACLS(nn.Module):
 
     def __init__(self,
                  pos_lambda: float = 1.0,
