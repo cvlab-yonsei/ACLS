@@ -1,0 +1,21 @@
+name: tiny_imagenet
+
+data_root: /dataset/tiny-imagenet-20
+batch_size: 64
+
+object:
+  trainval:
+    _target_: calibrate.data.tiny_imagenet.get_train_val_loader
+    root: ${data.data_root}
+    batch_size: ${data.batch_size}
+    val_samples_per_class: 50
+    random_seed: ${seed}
+    shuffle: True
+    num_workers: 4
+    pin_memory: True
+  test:
+    _target_: calibrate.data.tiny_imagenet.get_test_loader
+    root: ${data.data_root}
+    batch_size: ${data.batch_size}
+    num_workers: 4
+    pin_memory: True
