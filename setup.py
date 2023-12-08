@@ -6,15 +6,16 @@ setup(
     packages=find_packages(),
     python_requries=">=3.8",
     install_requires=[
-        "torch",
+        "torch==1.8.0",
         "torchvision>=0.8.2",
         "ipdb==0.13.9",
+        "numpy==1.19.2"
+        "scipy==1.8.1"
         "albumentations==1.1.0",
         "opencv-python==4.5.1.48",
         "hydra-core==1.2.0",
         "flake8==4.0.1",
         "terminaltables==3.1.10",
         "matplotlib==3.5.1",
-        "pandas==1.4.2"
     ],
 )
