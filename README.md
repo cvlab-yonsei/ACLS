@@ -41,12 +41,12 @@ The structure should be organized as follows:
 ### Training
 #### Tiny-ImageNet
 ```bash
-bash scripts/run_tiny.sh
+sh scripts/run_tiny.sh
 ```
 
 #### ImageNet
 ```bash
-bash scripts/imagenet/run_imagenet.sh
+sh scripts/imagenet/run_imagenet.sh
 ```
 
 ### Testing
