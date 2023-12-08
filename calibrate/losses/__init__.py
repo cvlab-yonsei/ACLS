@@ -1,3 +1,3 @@
 from .label_smoothing import LabelSmoothingCrossEntropy
-from .mbls import MBLS
+from .mbls import MbLS
 from .acls import ACLS
