@@ -1,5 +1,5 @@
 name: resnet50_tiny
-num_classes: 10
+num_classes: 200
 
 object:
   _target_: calibrate.net.resnet_tiny_imagenet.resnet50

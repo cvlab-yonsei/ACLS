@@ -1,6 +1,6 @@
 name: tiny_imagenet
 
-data_root: /dataset/tiny-imagenet-20
+data_root: /dataset/tiny-imagenet-200
 batch_size: 64
 
 object:
