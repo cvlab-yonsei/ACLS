@@ -1,0 +1,31 @@
+hydra:
+  run:
+    dir: outputs/${data.name}/${model.name}-${loss.name}-${optim.name}/${now:%Y%m%d-%H:%M:%S-%f}
+
+defaults:
+  - data: tiny_imagenet
+  - model: resnet50_tiny
+  - loss: acls
+  - optim: sgd
+  - scheduler: multi_step
+  - wandb: my
+  - override hydra/job_logging: custom
+  - _self_
+
+task: cv
+device: cuda:0
+seed: 1
+log_period: 100
+train:
+  clip_grad_norm: True
+  max_epoch: 100
+  resume: False
+  keep_checkpoint_num: 1
+  keep_checkpoint_interval: 0
+calibrate:
+  num_bins: 15
+  visualize: False
+test:
+  checkpoint: ""
+  save_logits: False
+  post_temperature: False
