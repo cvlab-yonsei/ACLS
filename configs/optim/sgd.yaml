@@ -1,0 +1,12 @@
+name: sgd
+lr: 0.1
+momentum: 0.9
+weight_decay: 5e-4
+nesterov: False
+
+object:
+  _target_: torch.optim.SGD
+  lr: ${optim.lr}
+  momentum: ${optim.momentum}
+  weight_decay: ${optim.weight_decay}
+  nesterov: ${optim.nesterov}

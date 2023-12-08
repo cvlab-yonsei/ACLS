@@ -1,0 +1,10 @@
+name: plateau
+gamma: 0.5
+patience: 10
+
+object:
+  _target_: torch.optim.lr_scheduler.ReduceLROnPlateau
+  mode: min
+  factor: ${scheduler.gamma}
+  patience: ${scheduler.patience}
+  verbose: True

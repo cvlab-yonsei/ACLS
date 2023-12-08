@@ -1,0 +1,9 @@
+name: step
+step_size: 50
+gamma: 0.1
+
+object:
+  _target_: torch.optim.lr_scheduler.StepLR
+  step_size: ${scheduler.step_size}
+  gamma: ${scheduler.gamma}
+  verbose: True

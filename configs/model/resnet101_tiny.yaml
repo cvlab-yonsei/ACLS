@@ -1,0 +1,6 @@
+name: resnet101_tiny
+num_classes: 10
+
+object:
+  _target_: calibrate.net.resnet_tiny_imagenet.resnet101
+  num_classes: ${model.num_classes}

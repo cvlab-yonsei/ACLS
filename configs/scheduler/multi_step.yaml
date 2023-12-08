@@ -1,0 +1,9 @@
+name: multi_step
+milestones: [40, 60]
+gamma: 0.1
+
+object:
+  _target_: torch.optim.lr_scheduler.MultiStepLR
+  milestones: ${scheduler.milestones}
+  gamma: ${scheduler.gamma}
+  verbose: True
