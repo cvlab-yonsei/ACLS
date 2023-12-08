@@ -8,7 +8,6 @@ defaults:
   - loss: acls
   - optim: sgd
   - scheduler: multi_step
-  - wandb: my
   - override hydra/job_logging: custom
   - _self_
 

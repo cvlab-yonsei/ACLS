@@ -13,7 +13,6 @@ setup(
         "opencv-python==4.5.1.48",
         "hydra-core==1.2.0",
         "flake8==4.0.1",
-        "wandb==0.12.14",
         "terminaltables==3.1.10",
         "matplotlib==3.5.1",
         "plotly==5.7.0",
