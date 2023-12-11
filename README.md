@@ -127,6 +127,16 @@ python tools/test.py data=imagenet hydra.run.dir=your/weight/directory test.chec
 </p>
 </details>  
 
+## Citation
+```
+@inproceedings{park2023acls,
+  title={{ACLS}: Adaptive and conditional label smoothing for network calibration},
+  author={Park, Hyekang and Noh, Jongyoun and Oh, Youngmin and Baek, Donghyeon and Ham, Bumsub},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  year={2023}
+}
+```
+
 ## References
 Our work is mainly built on [FLSD](https://github.com/torrvision/focal_calibration), [MbLS](https://github.com/by-liu/MbLS), and [CALS](https://github.com/by-liu/CALS). Thanks to the authors!
 
