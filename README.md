@@ -15,7 +15,7 @@ This repository has been tested with the following libraries:
 
 ### Installation
 ```bash
-
+pip install -e .
 ```
 
 ### Datasets
