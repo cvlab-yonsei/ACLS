@@ -1,7 +1,7 @@
 # Pytorch implementation of ACLS
 This is the implementation of the paper "ACLS:Adaptive and Conditional Label Smoothing for Network Calibration".
 
-For detailed information, please check out project site [[website]()] or our paper [[arXiv](https://arxiv.org/abs/2308.11911)].
+For detailed information, please check out project site [[website](https://cvlab.yonsei.ac.kr/projects/ACLS/)] or our paper [[arXiv](https://arxiv.org/abs/2308.11911)].
 
 
 
